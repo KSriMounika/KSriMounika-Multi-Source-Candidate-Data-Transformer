@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List, Optional, Any
 from src.models.candidate import Skill
 
 def merge_names(names: List[Optional[str]]) -> Optional[str]:
