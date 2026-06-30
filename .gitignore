@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+venv/
+.env
+.idea/
+.vscode/
+
+# Secrets and APIs
+*.key
+*.pem
+secrets.json
+config.ini
+api_keys.py

@@ -1,0 +1,43 @@
+{
+  "full_name": "John Doe",
+  "primary_email": "john.doe@example.com",
+  "phone": "+919876543210",
+  "skills": [
+    "Machine Learning",
+    "Python",
+    "SQL"
+  ],
+  "overall_confidence": 0.83,
+  "provenance": [
+    {
+      "field": "full_name",
+      "source": "CSV",
+      "method": "column_mapping"
+    },
+    {
+      "field": "full_name",
+      "source": "Resume",
+      "method": "first_line_heuristic"
+    },
+    {
+      "field": "primary_email",
+      "source": "CSV",
+      "method": "column_mapping"
+    },
+    {
+      "field": "primary_email",
+      "source": "Resume",
+      "method": "regex_extraction"
+    },
+    {
+      "field": "phone",
+      "source": "Resume",
+      "method": "regex_extraction"
+    },
+    {
+      "field": "skills",
+      "source": "Resume",
+      "method": "section_parsing"
+    }
+  ]
+}

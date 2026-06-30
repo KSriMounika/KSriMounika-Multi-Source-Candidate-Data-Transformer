@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Custom Candidate Projection",
+  "type": "object",
+  "properties": {
+    "full_name": { "type": "string" },
+    "primary_email": { "type": "string" },
+    "phone": { "type": ["string", "null"] },
+    "skills": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "overall_confidence": { "type": "number" },
+    "provenance": { "type": "array" }
+  },
+  "required": ["full_name", "primary_email"]
+}

@@ -1,0 +1,132 @@
+{
+  "candidate_id": "f3184876-fc76-58bc-8174-e75484dfb35a",
+  "full_name": "John Doe",
+  "emails": [
+    "john.doe@example.com",
+    "john@gmail.com"
+  ],
+  "phones": [
+    "+919876543210"
+  ],
+  "location": {
+    "city": "Hyderabad",
+    "region": "Telangana",
+    "country": "IN"
+  },
+  "links": {
+    "linkedin": "https://linkedin.com/in/johndoe",
+    "github": "https://github.com/johndoe",
+    "portfolio": null,
+    "other": []
+  },
+  "headline": "Software Engineer at ABC Pvt Ltd",
+  "years_experience": 4.5,
+  "skills": [
+    {
+      "name": "Machine Learning",
+      "confidence": 0.8,
+      "sources": [
+        "Resume"
+      ]
+    },
+    {
+      "name": "Python",
+      "confidence": 0.8,
+      "sources": [
+        "Resume"
+      ]
+    },
+    {
+      "name": "SQL",
+      "confidence": 0.8,
+      "sources": [
+        "Resume"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "ABC Pvt Ltd",
+      "title": "Software Engineer",
+      "start": "2022-01",
+      "end": null,
+      "summary": null
+    }
+  ],
+  "education": [
+    {
+      "institution": "ABC University",
+      "degree": "B.Tech",
+      "field": "Computer Science",
+      "end_year": 2021
+    }
+  ],
+  "overall_confidence": 0.83,
+  "provenance": [
+    {
+      "field": "candidate_id",
+      "source": "Pipeline",
+      "method": "deterministic_hash"
+    },
+    {
+      "field": "full_name",
+      "source": "CSV",
+      "method": "column_mapping"
+    },
+    {
+      "field": "full_name",
+      "source": "Resume",
+      "method": "first_line_heuristic"
+    },
+    {
+      "field": "emails",
+      "source": "CSV",
+      "method": "column_mapping"
+    },
+    {
+      "field": "emails",
+      "source": "Resume",
+      "method": "regex_extraction"
+    },
+    {
+      "field": "phones",
+      "source": "Resume",
+      "method": "regex_extraction"
+    },
+    {
+      "field": "location",
+      "source": "Resume",
+      "method": "section_parsing"
+    },
+    {
+      "field": "links",
+      "source": "Resume",
+      "method": "regex_extraction"
+    },
+    {
+      "field": "headline",
+      "source": "Resume",
+      "method": "section_parsing"
+    },
+    {
+      "field": "years_experience",
+      "source": "Pipeline",
+      "method": "date_computation"
+    },
+    {
+      "field": "skills",
+      "source": "Resume",
+      "method": "section_parsing"
+    },
+    {
+      "field": "experience",
+      "source": "Resume",
+      "method": "section_parsing"
+    },
+    {
+      "field": "education",
+      "source": "Resume",
+      "method": "section_parsing"
+    }
+  ]
+}
